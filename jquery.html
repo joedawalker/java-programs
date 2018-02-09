@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="utf-8">
+    <script src=""></script>
+</head>
+
+<body>
+    <div class="container">
+        <button class="btn">Click Me</button>
+        <button class="btn">Click Me Too!</button>
+        <button id="btnId">Don't Click Me!</button>
+    </div>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 1</li>
+        <li>Item 1</li>
+        <li>Item 1</li>
+        <li>Item 1</li>
+        <li>Item 1</li>
+        <li>Item 1</li>
+        <li>Item 1</li>
+    </ol>
+
+    <script>
+        $('li').each(function (idx, ele) {
+            $(ele).html('Item' + (idx + 1))
+
+        });
+    </script>
+</body>
+
+</html>
